@@ -239,23 +239,51 @@ body {
     border: 0 none;
   }
 /* Use three @media screen tags, each with one of these max-widths: 980px, 768px and 640px */
+  
   /* for desktop*/
   @media screen and (max-width: 980px) {
-
+    .main-section {
+      max-width: 400px;
+      margin-left: 100px
+    }
+    .sidebar {
+      margin-right: 100px
+    }
 
 
   }
   /*for tablet*/
   @media screen and (max-width: 768px) {
-
-
-    
+  #masthead {
+    max-width: 99%;
   }
+
+  .main-section {
+    max-width: 90%;
+    margin-left: 36px;
+    margin-right: 0px;
+    margin-bottom: 10px
+  }
+
+  .sidebar {
+    max-width: 90%;
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-top: 10px
+  }
+    
   /* for phone*/
   @media screen and (max-width: 640px) {
   #masthead {
       position: static;
-      width: 90%;
+      width: 99%;
       padding-right: 30px
   }
+  
+  .main-section {
+    margin-top: -100px
   }
+  .sidebar {
+    margin-left: 30px;
+  }  
+  
